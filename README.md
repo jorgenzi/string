@@ -99,4 +99,36 @@ s21_sprintf(buffer, "User: %s, Age: %d, Rate: %.2f", "Alice", 25, 4.75);
    cd libstring
 
 2. **Установите зависимости для тестов (выберите вашу ОС):**
-  
+   ```bash
+   - 🐧 Ubuntu/Debian: sudo apt-get install libgtest-dev cmake build-essential
+   - 🍎 macOS (Homebrew): brew install googletest cmake
+   - 🪟 Windows (MinGW/MSYS2): pacman -S mingw-w64-x86_64-gtest mingw-w64-x86_64-cmake
+
+3. Соберите проект:
+   ```bash
+   make all
+
+4. Запустите модульные тесты:
+   ```bash
+   make test
+   🔍 Подробный вывод: make test VERBOSE=1
+   🎯 Запуск конкретных тестов: ./build/tests --gtest_filter="SprintfTest.*"
+
+5. Проверьте код на утечки памяти (опционально, требуется Valgrind):
+   📦 Установка: sudo apt-get install valgrind (Ubuntu) или brew install valgrind (macOS)
+   🔎 Запуск проверки: make valgrind
+   ⚙️ Ручной запуск: valgrind --leak-check=full ./build/tests
+
+6. Очистите артефакты сборки:
+   make clean
+
+7. (Опционально) Используйте быструю проверку работоспособности:
+   🚀 Одна команда для сборки и теста: make && make test
+   ✅ Ожидаемый результат: все тесты пройдены, утечек памяти нет
+
+👥 Вклад в проект
+🔹 Мой вклад
+- ✅ Реализация 5 ключевых функций: strlen, strcpy, strcat, strcmp, strstr
+- ✅ Полная разработка модуля sprintf с парсингом формат-строки
+- ✅ Написание модульных тестов для sprintf и граничных случаев
+- ✅ Участие в code review, разрешение конфликтов слияния, ведение веток по Git Flow
