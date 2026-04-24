@@ -119,14 +119,17 @@ s21_sprintf(buffer, "User: %s, Age: %d, Rate: %.2f", "Alice", 25, 4.75);
    🎯 Запуск конкретных тестов: ./build/tests --gtest_filter="SprintfTest.*"
 
 5. Проверьте код на утечки памяти (опционально, требуется Valgrind):
+   ```bash
    📦 Установка: sudo apt-get install valgrind (Ubuntu) или brew install valgrind (macOS)
    🔎 Запуск проверки: make valgrind
    ⚙️ Ручной запуск: valgrind --leak-check=full ./build/tests
 
-6. Очистите артефакты сборки:
+7. Очистите артефакты сборки:
+   ```bash
    make clean
 
-7. (Опционально) Используйте быструю проверку работоспособности:
+9. (Опционально) Используйте быструю проверку работоспособности:
+    ```bash
    🚀 Одна команда для сборки и теста: make && make test
    ✅ Ожидаемый результат: все тесты пройдены, утечек памяти нет
 
