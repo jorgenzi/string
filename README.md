@@ -1,11 +1,6 @@
-# 🧵 libstring — Аналог стандартной библиотеки строк на C
+# libstring — Аналог стандартной библиотеки строк на C
 
 <div align="center">
-
-![C](https://img.shields.io/badge/C-99-blue?logo=c&logoColor=white)
-![License](https://img.shields.io/badge/license-MIT-green)
-![Tests](https://img.shields.io/badge/tests-Google%20Test-orange)
-![Build](https://img.shields.io/badge/build-Makefile-lightgrey)
 
 **Производительная и протестированная реализация стандартных строковых функций C с расширенным модулем `sprintf`**
 
