@@ -106,14 +106,14 @@ s21_sprintf(buffer, "User: %s, Age: %d, Rate: %.2f", "Alice", 25, 4.75);
 4. Запустите модульные тесты:
    ```bash
    make test
-   🔍 Подробный вывод: make test VERBOSE=1
-   🎯 Запуск конкретных тестов: ./build/tests --gtest_filter="SprintfTest.*"
+   Подробный вывод: make test VERBOSE=1
+   Запуск конкретных тестов: ./build/tests --gtest_filter="SprintfTest.*"
 
 5. Проверьте код на утечки памяти (опционально, требуется Valgrind):
    ```bash
-   📦 Установка: sudo apt-get install valgrind (Ubuntu) или brew install valgrind (macOS)
-   🔎 Запуск проверки: make valgrind
-   ⚙️ Ручной запуск: valgrind --leak-check=full ./build/tests
+   Установка: sudo apt-get install valgrind (Ubuntu) или brew install valgrind (macOS)
+   Запуск проверки: make valgrind
+   Ручной запуск: valgrind --leak-check=full ./build/tests
 
 7. Очистите артефакты сборки:
    ```bash
@@ -121,8 +121,8 @@ s21_sprintf(buffer, "User: %s, Age: %d, Rate: %.2f", "Alice", 25, 4.75);
 
 9. (Опционально) Используйте быструю проверку работоспособности:
     ```bash
-   🚀 Одна команда для сборки и теста: make && make test
-   ✅ Ожидаемый результат: все тесты пройдены, утечек памяти нет
+   Одна команда для сборки и теста: make && make test
+   Ожидаемый результат: все тесты пройдены, утечек памяти нет
 
 
 
