@@ -89,37 +89,44 @@ s21_sprintf(buffer, "User: %s, Age: %d, Rate: %.2f", "Alice", 25, 4.75);
 ## 🚀 Сборка и запуск
 
 1. **Склонируйте репозиторий и перейдите в папку проекта:**
+   
    ```bash
    git clone https://github.com/your-username/libstring.git
    cd libstring
 
-2. **Установите зависимости для тестов (выберите вашу ОС):**
+3. **Установите зависимости для тестов (выберите вашу ОС):**
+   
    ```bash
    - 🐧 Ubuntu/Debian: sudo apt-get install libgtest-dev cmake build-essential
    - 🍎 macOS (Homebrew): brew install googletest cmake
    - 🪟 Windows (MinGW/MSYS2): pacman -S mingw-w64-x86_64-gtest mingw-w64-x86_64-cmake
 
-3. Соберите проект:
+5. Соберите проект:
+   
    ```bash
    make all
 
-4. Запустите модульные тесты:
+7. Запустите модульные тесты:
+   
    ```bash
    make test
    Подробный вывод: make test VERBOSE=1
    Запуск конкретных тестов: ./build/tests --gtest_filter="SprintfTest.*"
 
-5. Проверьте код на утечки памяти (опционально, требуется Valgrind):
+9. Проверьте код на утечки памяти (опционально, требуется Valgrind):
+    
    ```bash
    Установка: sudo apt-get install valgrind (Ubuntu) или brew install valgrind (macOS)
    Запуск проверки: make valgrind
    Ручной запуск: valgrind --leak-check=full ./build/tests
 
-7. Очистите артефакты сборки:
+11. Очистите артефакты сборки:
+    
    ```bash
    make clean
 
-9. (Опционально) Используйте быструю проверку работоспособности:
+11. (Опционально) Используйте быструю проверку работоспособности:
+
     ```bash
    Одна команда для сборки и теста: make && make test
    Ожидаемый результат: все тесты пройдены, утечек памяти нет
